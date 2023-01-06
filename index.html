@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // pink: "#FFC0CB",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="xl:container md:mx-auto">
+      <h1 class="text-3xl text-pink-500">This Is Title</h1>
+    </div>
+  </body>
+</html>
