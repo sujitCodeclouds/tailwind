@@ -9,9 +9,26 @@
     <script>
       tailwind.config = {
         theme: {
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1320px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+
           extend: {
             colors: {
-              // pink: "#FFC0CB",
+              //  pink: "#FFC0CB",
             },
           },
         },
@@ -19,8 +36,8 @@
     </script>
   </head>
   <body>
-    <div class="xl:container md:mx-auto">
-      <h1 class="text-3xl text-pink-500">This Is Title</h1>
+    <div class="container md:mx-auto">
+      <h1 class="text-3xl text-[#ff0]">This Is Title</h1>
     </div>
   </body>
 </html>
